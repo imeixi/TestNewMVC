@@ -32,20 +32,20 @@ public class CustomerDAOJdbcImpl extends DAO<Customer> implements CustomerDAO {
 
 	@Override
 	public void delete(Integer id) {
-		String sql = "DELETE FROM customers" + "WHERE id = ?";
+		String sql = "DELETE FROM customers" + " WHERE id = ?";
 		update(sql, id);
 	}
 
 	@Override
 	public long getCountWithName(String name) {
-		String sql = "SELECT count(id) FROM customers" + "WHERE name = ?";
+		String sql = "SELECT count(id) FROM customers" + " WHERE name = ?";
 		return getForValue(sql, name);
 	}
 
 	@Override
 	public void update(Customer customer) {
 
-		String sql = "UPDATE customers SET name = ?,address = ?,phone = ? " + "WHERE id = ?";
+		String sql = "UPDATE customers SET name = ?,address = ?,phone = ? " + " WHERE id = ?";
 		update(sql, customer.getName(), customer.getAddress(), customer.getPhone(), customer.getId());
 
 	}

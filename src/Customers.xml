@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+	<customer id = "1">
+		<name>alibaba</name>
+		<address>hangzhuo</address>
+		<phone>4001002000</phone>
+	</customer>
+	
+	<customer id = "2">
+		<name>baidu</name>
+		<address>beijing</address>
+		<phone>4001003000</phone>
+	</customer>
+	
+	<customer id = "3">
+		<name>tencent</name>
+		<address>shenzhen</address>
+		<phone>4001004000</phone>
+	</customer>
+
+</customers>
