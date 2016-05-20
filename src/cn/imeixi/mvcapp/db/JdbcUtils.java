@@ -33,7 +33,7 @@ public class JdbcUtils {
 	 * 释放Connection 链接
 	 * @param connection
 	 */
-	public static void releasConnection(Connection connection) {
+	public static void releaseConnection(Connection connection) {
 		try {
 			if (connection != null) {
 				connection.close();

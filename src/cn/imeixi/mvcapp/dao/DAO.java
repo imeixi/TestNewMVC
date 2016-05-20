@@ -37,7 +37,7 @@ public class DAO <T>{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally{
-			JdbcUtils.releasConnection(connection);
+			JdbcUtils.releaseConnection(connection);
 		}
 		return null;
 	}
@@ -57,7 +57,7 @@ public class DAO <T>{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally{
-			JdbcUtils.releasConnection(connection);
+			JdbcUtils.releaseConnection(connection);
 		}
 		return null;
 	}
@@ -78,7 +78,7 @@ public class DAO <T>{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally{
-			JdbcUtils.releasConnection(connection);
+			JdbcUtils.releaseConnection(connection);
 		}
 		return null;
 	}
@@ -99,7 +99,7 @@ public class DAO <T>{
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally{
-			JdbcUtils.releasConnection(connection);
+			JdbcUtils.releaseConnection(connection);
 		}
 	}
 	
